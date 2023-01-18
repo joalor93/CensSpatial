@@ -96,14 +96,21 @@ SAEMres = SAEMSCL(cc,y,cens.type="left",trend="1st",coords=coords,
 
 
 ### Seminaive sintax
-seminaiveres = Seminaive(data=dataobs,y.col=3,coords.col=1:2,covar=F,cc=as.matrix(cc),trend="1st", cov.model="gaussian",fix.nugget=F,nugget=170,kappa=2, thetaini=c(cov.ini[2],cov.ini[1]),cons=c(0.1,2,0.5),MaxIter=500,copred=coordspred,
-             cutoff = lod)
+seminaiveres = Seminaive(data=dataobs,y.col=3,coords.col=1:2,
+                         covar=F,cc=as.matrix(cc),trend="1st",
+                         cov.model="gaussian",fix.nugget=F,
+                         nugget=170,kappa=2,
+                         thetaini=c(cov.ini[2],cov.ini[1]),
+                         cons=c(0.1,2,0.5),MaxIter=500,
+                         copred=coordspred, cutoff = lod)
 
 
 ### Naive 1 and Naive 2 sintax
-naive12res = algnaive12(data=dataobs,y.col=3,coords.col=1:2,covar=F,cc=as.matrix(cc),trend="1st",
-               cov.model="gaussian",fix.nugget=F,nugget=170,kappa=2,
-               thetaini=c(cov.ini[2],cov.ini[1]),copred=coordspred,cutoff=lod)
+naive12res = algnaive12(data=dataobs,y.col=3,coords.col=1:2,covar=F,
+                        cc=as.matrix(cc),trend="1st",
+                        cov.model="gaussian",fix.nugget=F,nugget=170,kappa=2,
+                        thetaini=c(cov.ini[2],cov.ini[1]),copred=coordspred,
+                        cutoff=lod)
 
 ```
 
