@@ -278,7 +278,7 @@ Geostatistical estimation and prediction for censored responses. Spatial
 statistics 23, 109–123
 
 Ordonez, J., C. Galarza, and V. Lachos (2022). CensSpatial: Censored
-spatial models. R package version 3.5, URL
+spatial models. R package version 3.6, URL
 
 Schelin, L. and S. Sjostedt-de Luna (2014). Spatial prediction in the
 presence of left-censoring. Computational Statistics and Data Analysis
